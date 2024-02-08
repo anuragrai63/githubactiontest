@@ -5,6 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "gholukabucket"
+    dynamodb_table = "Ammukatable"
     key    = "TFSTATE/terrafrom.tfstate"
     region = "us-east-1"
   }
@@ -116,7 +117,7 @@ EOF
 
 
   tags = {
-    Name = "tf-instance22"
+    Name = "Ammukainstance"
   }
 
 
