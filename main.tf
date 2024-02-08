@@ -17,6 +17,7 @@ resource "aws_vpc" "my_vpc" {
   tags = {
     Name = "tf-example"
   }
+
 }
 
 
@@ -119,7 +120,7 @@ EOF
   tags = {
     Name = "BuntiorBabli"
   }
-
+ lifecycle {    ignore_changes = [tags]  }
 
 }
 
