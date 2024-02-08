@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "gholukabucket"
-    key    = "TFSTATE/"
+    key    = "TFSTATE/terrafrom.tfstate"
     region = "us-east-1"
   }
 }
