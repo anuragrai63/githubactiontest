@@ -103,8 +103,8 @@ resource "aws_instance" "foo" {
   ami           = "ami-0277155c3f0ab2930" # us-east-1
   subnet_id     = aws_subnet.my_subnet.id
   instance_type = "t2.micro"
-  #  vpc_security_group_ids = [aws_security_group.my_sg.id]
-  security_groups = [aws_security_group.my_sg.id]
+  vpc_security_group_ids = [aws_security_group.my_sg.id]
+  ##security_groups = [aws_security_group.my_sg.id]
    
 
   user_data = <<EOF
