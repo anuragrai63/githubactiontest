@@ -119,7 +119,7 @@ EOF
 
 
   tags = {
-    Name = "AAAAAAAA"
+    Name = "Ammu"
   }
  #lifecycle {    ignore_changes = all  }
 
