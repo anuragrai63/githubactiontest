@@ -104,8 +104,8 @@ resource "aws_instance" "foo" {
   subnet_id     = aws_subnet.my_subnet.id
   instance_type = "t2.micro"
   #  vpc_security_group_ids = [aws_security_group.my_sg.id]
-  # security_groups = [aws_security_group.my_sg.id]
-    security_groups = ["sg-01f9c26709679f3ce"]
+  security_groups = [aws_security_group.my_sg.id]
+   
 
   user_data = <<EOF
 #!/bin/bash
