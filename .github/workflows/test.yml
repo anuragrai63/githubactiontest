@@ -46,9 +46,9 @@ jobs:
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan -input=false
-    - uses: trstringer/manual-approval@v1
-      with:
-        secret: ${{ github.TOKEN }}
+    #- uses: trstringer/manual-approval@v1
+      #with:
+       # secret: ${{ github.TOKEN }}
         #approvers: "test"
         #minimum-approvals: 1
         #issue-title: "Deploying v1.0.0 to prod"
